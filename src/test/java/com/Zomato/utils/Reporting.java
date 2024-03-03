@@ -19,7 +19,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-6*
+
 public class Reporting extends TestListenerAdapter
 {
 	public ExtentHtmlReporter htmlReporter;
@@ -78,7 +78,7 @@ public class Reporting extends TestListenerAdapter
 	
 	public void onTestSkipped(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
 	}
 	

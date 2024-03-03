@@ -22,7 +22,7 @@ import com.aventstack.extentreports.util.Assert;
 public class LoginTestcase_001 extends Baseclass{
 	
 	
-	
+	@Test
 	public void signup(String name, String emailid) throws Exception
 	{
 		driver.get(baseURL);
@@ -76,18 +76,12 @@ public class LoginTestcase_001 extends Baseclass{
 	}
 	
 
-@Test
-public void linktext()
-{
-	driver.get(baseURL);
-	String exptitle="Zomato";
-	String actualtitle=driver.getTitle();
-	Assert.
+
 	
-	;
+	
 	
 }
-}
+
 
 
 
